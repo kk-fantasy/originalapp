@@ -41,6 +41,16 @@
 いいね
 コメント
 レコメンド
+
 ■ 機能の実装方針予定
 一般的なCRUD以外の実装予定の機能についてそれぞれどのようなイメージ(使用するAPIや)で実装する予定なのか現状考えているもので良いので教えて下さい。
 レコメンド(Amazon Personalize)
+
+■ 技術スタック
+開発環境 Docker
+サーバーサイド Ruby on Rails 7系
+Ruby 3.2.2 Rails 7.1.3.2
+フロントエンド Hotwire
+CSSフレームワーク bootstrap5系、Silicon（Bootstrapテンプレート）
+WebAPI Amazon Personalize
+インフラ render.com
