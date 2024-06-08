@@ -49,3 +49,7 @@ WebAPI Amazon Personalize,TMDBAPI(映画の情報取得)
 
 ■ 画面遷移図
 https://www.figma.com/design/CmxT5Btijy4qO7LF8RZqKQ/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=0-1&t=3zOLBZdRkG0c3Txq-0
+
+
+■ ER図
+https://app.diagrams.net/#G1WEFQt08zBtEdOYmJm6kcPO13RstYWpDP#%7B%22pageId%22%3A%22R2lEEEUBdFMjLlhIrx00%22%7D
