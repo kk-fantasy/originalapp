@@ -1,0 +1,51 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">作品詳細</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <% if @movie.poster_url.present? %>
+        <%= link_to movie_path(@movie.tmdb_id) do %>
+          <%= image_tag @movie.poster_url, class: "img-fluid rounded", alt: @movie.title %>
+        <% end %>
+      <% else %>
+        <%= image_tag "placeholder.png", class: "img-fluid rounded", alt: "No Image" %>
+      <% end %>
+    </div>
+    <div class="col-md-8">
+      <h2 class="mt-3 text-center text-md-left"><%= @movie.title %></h2>
+      
+      <div class="mt-4">
+        <!-- `overview` ではなく `description` を使用する -->
+        <p><%= @movie.description.present? ? @movie.description : "概要は利用できません。" %></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-8 text-center">
+      <%= link_to 'レビューする', new_movie_review_path(movie_tmdb_id: @movie.tmdb_id), class: 'btn btn-primary' %>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+      <% @movie_reviews.each_with_index do |review, index| %>
+        <div class="mb-4">
+          <h5><%= link_to review.title, movie_review_path(@movie.tmdb_id, review), class: 'fw-bold text-decoration-none' %></h5>
+          <div class="d-flex justify-content-between align-items-center">
+            <span>reviewed by <%= review.user.last_name %> <%= review.user.first_name %></span>
+            <span class="text-muted"><%= l review.created_at, format: :long %></span>
+          </div>
+          <div class="tags mt-2">
+            <% review.tags.each do |tag| %>
+              <%= link_to tag.name, '#', class: 'badge bg-primary me-1' %>
+            <% end %>
+          </div>
+        </div>
+        
+        <% unless index == @movie_reviews.size - 1 %>
+          <hr>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

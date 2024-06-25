@@ -1,0 +1,9 @@
+<%= form_tag movies_path, method: :get, class: "d-flex justify-content-start mb-4" do %>
+  <div class="form-group me-2">
+    <%= text_field_tag 'q[title_cont]', params.dig(:q, :title_cont), class: "form-control", placeholder: "映画のタイトルで検索", style: "width: 300px;" %>
+  </div>
+  <div class="form-group me-2">
+    <%= select_tag 'q[tag_id_eq]', options_for_select(Tag.pluck(:name, :id), params.dig(:q, :tag_id_eq)), { include_blank: 'すべてのタグ', class: 'form-control' } %>
+  </div>
+  <%= submit_tag "検索", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <h1 class="text-center">レビュー一覧</h1>
+      
+      <% if @reviews.any? %>
+        <% @reviews.each do |review| %>
+          <div class="mb-4">
+            <h3><%= review.title %></h3>
+            <p><%= review.content %></p>
+            <p><small>投稿日時: <%= review.created_at.strftime("%Y/%m/%d %H:%M") %></small></p>
+            <hr>
+          </div>
+        <% end %>
+        
+        <div class="d-flex justify-content-center mt-4">
+          <%= paginate @reviews, theme: 'bootstrap5' %>
+        </div>
+      
+      <% else %>
+        <p class="text-center">現在、レビューはありません。</p>
+      <% end %>
+    </div>
+  </div>
+</div>

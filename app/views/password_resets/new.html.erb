@@ -1,0 +1,15 @@
+<h1 class="text-center mb-0">パスワードリセット</h1>
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+  <div class="w-50" style="margin-top: 1rem;"> <!-- w-75からw-50に変更、margin-topで余白を微調整 -->
+    <%= form_with url: password_resets_path, method: :post, local: true do |form| %>
+      <div class="form-group">
+        <%= form.label :email, 'メールアドレス' %>
+        <%= form.email_field :email, class: 'form-control' %>
+      </div>
+      <div class="form-group text-center mt-1 mb-0"> <!-- mb-0でボタンの下の余白を最小に -->
+        <%= form.submit '送信', class: 'btn btn-primary' %> <!-- btn-blockを削除してボタンの幅を適切に -->
+      </div>
+    <% end %>
+  </div>
+</div>

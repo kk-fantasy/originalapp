@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto">
+      <h1>ログイン</h1>
+      
+      <%= form_with model: @user, url: login_path do |f| %>
+        <% if @user&.errors&.any? %>
+          <div id="error_explanation" class="alert alert-danger">
+            <h2><%= pluralize(@user.errors.count, "エラー") %>が発生しました：</h2>
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        
+        <div class="mb-3">
+          <%= f.label :email, 'メールアドレス' %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :password, 'パスワード' %>
+          <%= f.password_field :password, class: 'form-control' %>
+        </div>
+        <%= f.submit 'ログイン', class: 'btn btn-primary' %>
+      <% end %>
+      
+      <div class='text-center'>
+        <%= link_to '登録ページへ', new_user_path %>
+        <%= link_to 'パスワードをお忘れの方はこちら', new_password_reset_path %>
+      </div>
+    </div>
+  </div>
+</div>

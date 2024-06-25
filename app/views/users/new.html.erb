@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto">
+      <h1>ユーザー登録</h1>
+      
+      <%= form_with model: @user do |f| %>
+        <% if @user.errors.any? %>
+          <div id="error_explanation" class="alert alert-danger">
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <!-- messageから属性名を除去して表示 -->
+                <li><%= message.sub(/^#{@user.class.human_attribute_name(:last_name)} |#{@user.class.human_attribute_name(:first_name)} |#{@user.class.human_attribute_name(:email)} |#{@user.class.human_attribute_name(:password)} |#{@user.class.human_attribute_name(:password_confirmation)} /, '') %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        
+        <div class="mb-3">
+          <%= f.label :姓, class: "form-label" %>
+          <%= f.text_field :last_name, class: "form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :名, class: "form-label" %>
+          <%= f.text_field :first_name, class: "form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :メールアドレス, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :パスワード, class: "form-label" %>
+          <%= f.password_field :password, class: "form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :パスワード確認, class: "form-label" %>
+          <%= f.password_field :password_confirmation, class: "form-control" %>
+        </div>
+        
+        <%= f.submit "登録", class: "btn btn-primary" %>
+      <% end %>
+      
+      <div class='text-center'>
+        <%= link_to 'ログインページへ', login_path %>
+      </div>
+    </div>
+  </div>
+</div>
