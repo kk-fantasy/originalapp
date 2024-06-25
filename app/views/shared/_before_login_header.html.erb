@@ -1,0 +1,30 @@
+<header>
+  <nav class="navbar navbar-expand-lg navigation navbar-light bg-light">
+    <!-- ホラらぼ タイトル（リンク付き） -->
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <h1>ホラらぼ</h1>
+    <% end %>
+    
+    <!-- トグルボタン（モバイル表示用） -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- ナビゲーションメニュー -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto main-nav align-items-center">
+
+        <!-- 映画一覧 -->
+        <li class="nav-item">
+          <%= link_to '映画一覧', movies_path, class: 'nav-link' %>
+        </li>
+
+        <!-- ログインボタン -->
+        <li class="nav-item">
+          <%= link_to 'ログイン', login_path, class: 'nav-link' %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

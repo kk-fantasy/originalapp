@@ -1,0 +1,60 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">レビュー詳細</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <!-- レビューカード -->
+      <div class="card mb-3 border-0">
+        <div class="card-body">
+          <h5 class="card-title"><%= @review.title %></h5>
+          <p class="card-text"><%= @review.content %></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span>reviewed by <%= @review.user.last_name %> <%= @review.user.first_name %></span>
+            <span class="text-muted"><%= l @review.created_at, format: :long %></span>
+          </div>
+        </div>
+      </div>
+      <!-- 水平線 -->
+      <hr>
+      <!-- タグ -->
+      <div class="mt-4">
+        <h5>ジャンル</h5>
+        <div class="tags">
+          <% @review.tags.each do |tag| %>
+            <%= link_to tag.name, '#', class: 'badge bg-primary me-1' %>
+          <% end %>
+        </div>
+      </div>
+      <!-- 水平線 -->
+      <hr>
+      <!-- コメント一覧 -->
+      <div class="mt-4">
+        <h5>コメント</h5>
+        <% @review.comments.each do |comment| %>
+          <div class="comment-box mb-3">
+            <p class="comment-user text-muted"><%= comment.user.last_name %> <%= comment.user.first_name %></p>
+            <p class="comment-text"><%= comment.content %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <!-- ポスター画像をクリックして詳細画面に遷移 -->
+      <div class="text-center mb-4">
+        <% if @movie['poster_path'].present? %>
+          <%= link_to movie_path(@movie.tmdb_id), class: "text-decoration-none" do %>
+            <%= image_tag "https://image.tmdb.org/t/p/w500#{@movie['poster_path']}", class: "img-fluid rounded" %>
+          <% end %>
+        <% else %>
+          <%= image_tag "placeholder.png", class: "img-fluid rounded", alt: "No Image" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <!-- コメント投稿ボタンと編集ボタンを中央に配置 -->
+  <div class="row text-center mt-4">
+    <div class="col">
+      <%= link_to 'コメントする', new_movie_review_comment_path(review_id: @review.id, movie_tmdb_id: @movie.tmdb_id), class: 'btn btn-primary' %>
+      <%= link_to "編集", edit_movie_review_path(@movie.tmdb_id, @review.id), class: "btn btn-secondary" %>
+    </div>
+  </div>
+</div>

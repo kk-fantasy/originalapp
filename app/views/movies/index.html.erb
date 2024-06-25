@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <h1 class="text-center">映画一覧</h1>
+      
+      <% if params[:q].present? && @movies.present? %>
+        <!-- 検索結果の表示 -->
+        <div class="row">
+          <% @movies.each do |movie| %>
+            <% next if movie.nil? || movie.tmdb_id.nil? %> <!-- nil チェックを追加 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <%= link_to movie_path(movie.tmdb_id) do %>
+                  <%= image_tag (movie.poster_url.presence || asset_path("placeholder.png")), class: "card-img-top", alt: (movie.title.presence || "タイトル未定") %>
+                <% end %>
+                <div class="card-body">
+                  <h5 class="card-title"><%= link_to (movie.title.presence || "タイトル未定"), movie_path(movie.tmdb_id) %></h5>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <!-- ページネーションリンクの追加 -->
+        <div class="d-flex justify-content-center mt-4">
+          <%= paginate @movies %>
+        </div>
+
+      <% elsif !params[:q].present? %>
+        <!-- 通常の映画一覧の表示 -->
+        <div class="row">
+          <% if @tmdb_movies.present? %>
+            <% @tmdb_movies.each do |movie| %>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                  <%= link_to movie_path(movie['id']) do %>
+                    <%= image_tag "https://image.tmdb.org/t/p/w500#{movie['poster_path']}", class: "card-img-top", alt: movie['title'] %>
+                  <% end %>
+                  <div class="card-body">
+                    <h5 class="card-title"><%= link_to movie['title'], movie_path(movie['id']) %></h5>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <p class="text-center">現在、表示する映画はありません。</p>
+      <% end %>
+    </div>
+  </div>
+</div>
