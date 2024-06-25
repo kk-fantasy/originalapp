@@ -89,3 +89,8 @@ gem 'bootstrap5-kaminari-views'
 gem 'letter_opener_web', group: :development
 
 gem 'config'
+
+group :production do
+  gem "pg", "~> 1.1"
+end
+
