@@ -86,3 +86,5 @@ production:
   encoding: unicode
   pool: 5
   sslmode: require
+  url: <%= ENV['DATABASE_URL'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
