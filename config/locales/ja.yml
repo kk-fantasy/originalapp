@@ -1,0 +1,32 @@
+ja:
+  activerecord:
+    attributes:
+      comment:
+        content: "コメント"
+      user:
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "パスワード確認"
+        first_name: "名"
+        last_name: "姓"
+    errors:
+      models:
+        comment:
+          attributes:
+            content:
+              blank: "を入力してください"
+          messages:
+            blank: "コメントを入力してください"
+        user:
+          attributes:
+            email:
+              blank: "を入力してください"
+            password:
+              too_short: "が短すぎます（最低でも%{count}文字必要です）"
+              blank: "を入力してください"
+            password_confirmation:
+              blank: "を入力してください"
+            first_name:
+              blank: "を入力してください"
+            last_name:
+              blank: "を入力してください"

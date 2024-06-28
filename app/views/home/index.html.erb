@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <nav class="navbar navbar-light bg-light my-3 py-3" style="width: auto; max-width: 600px; margin: auto;">
+        <div class="d-flex flex-column align-items-center text-center w-100">
+          <p class="mb-0"><strong>ホラらぼとは？</strong></p>
+          <p class="mb-0">
+            ホラー映画専門のレビューサイトです。<br>
+            タグ検索により、より趣味嗜好に合ったホラー映画との出会いを実現します。
+          </p>
+        </div>
+      </nav>
+
+      <h2 class="text-center mb-4">レビュー</h2>
+      
+      <% @random_reviews.each_with_index do |review, index| %>
+        <div class="mb-3">
+          <h5><%= link_to review.movie.title, movie_path(review.movie.tmdb_id) %></h5>
+          <p><%= review.content.truncate(150) %></p>
+        </div>
+        <% unless index == @random_reviews.size - 1 %>
+          <hr> <!-- 最後のレビュー以外に水平線を挿入 -->
+        <% end %>
+      <% end %>
+      
+    </div>
+  </div>
+</div>

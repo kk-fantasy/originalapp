@@ -1,0 +1,22 @@
+<div class="text-center">
+  <h1>マイページ</h1>
+
+  <div class="profile mt-5">
+    <h3 class="text-center">プロフィール</h3>
+    <%= image_tag 'sample.jpg', class: 'rounded-circle mr-3', width: '40', height: '40' %>
+    <p>フルネーム: <%= @user.last_name %> <%= @user.first_name %></p>
+    <p>メールアドレス: <%= @user.email %></p>
+  </div>
+
+  <div class="reviews mt-5">
+    <h3 class="text-center">作成したレビュー</h3>
+    <% @reviews.each_with_index do |review, index| %>
+      <div class="review mt-3">
+        <h5><%= link_to review.movie.title, movie_path(review.movie.tmdb_id) %></h5>
+        <p><%= review.content.truncate(150) %></p>
+      </div>
+      <% unless index == @reviews.size - 1 %>
+        <hr> <!-- 最後のレビュー以外に水平線を挿入 -->
+      <% end %>
+    <% end %>
+  </div>
