@@ -1,7 +1,10 @@
 # config/initializers/session_store.rb
 
-Rails.application.config.session_store :cookie_store, key: '_myapp_session', expire_after: 14.days, secure: Rails.env.production?
-
+Rails.application.config.session_store :cookie_store, 
+                                       key: '_myapp_session', 
+                                       domain: :all, 
+                                       tld_length: 2, 
+                                       secure: Rails.env.production?
 # セッションストアの種類:
 # - :cookie_store: セッションをクッキーに保存します（デフォルト）。
 # - :cache_store: セッションをキャッシュに保存します。
