@@ -859,3 +859,336 @@ Processing by HomeController#index as TURBO_STREAM
 Completed 200 OK in 1371ms (Views: 40.6ms | ActiveRecord: 1328.7ms | Allocations: 5159)
 
 
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:52:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (3168.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (188.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (181.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (181.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (181.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 4288.8ms | Allocations: 5393)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.7ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (181.7ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 186.3ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 4485.3ms | Allocations: 7150)
+Completed 200 OK in 4489ms (Views: -1237.5ms | ActiveRecord: 5723.8ms | Allocations: 7964)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:52:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2512)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (362.8ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 366.0ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 373.7ms | Allocations: 3915)
+Completed 200 OK in 378ms (Views: 12.5ms | ActiveRecord: 362.8ms | Allocations: 4420)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:52:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (181.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 690ms (ActiveRecord: 181.1ms | Allocations: 1443)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:52:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (361.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (180.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (180.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (180.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (180.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1107.0ms | Allocations: 2747)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mTag Pluck (185.9ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 190.9ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1304.9ms | Allocations: 4539)
+Completed 200 OK in 1307ms (Views: 36.3ms | ActiveRecord: 1269.9ms | Allocations: 5079)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:53:17 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2510)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (369.0ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 371.6ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 378.4ms | Allocations: 3913)
+Completed 200 OK in 382ms (Views: 10.9ms | ActiveRecord: 368.9ms | Allocations: 4418)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:53:18 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2515)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (368.6ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 372.1ms | Allocations: 684)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 379.2ms | Allocations: 3928)
+Completed 200 OK in 383ms (Views: 12.0ms | ActiveRecord: 368.6ms | Allocations: 4437)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:53:35 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (181.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 508ms (ActiveRecord: 181.3ms | Allocations: 1447)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:53:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (361.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (180.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (180.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (190.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (180.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1116.2ms | Allocations: 2744)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 20)
+  [1m[36mTag Pluck (180.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 183.5ms | Allocations: 673)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1303.3ms | Allocations: 4528)
+Completed 200 OK in 1305ms (Views: 29.5ms | ActiveRecord: 1274.5ms | Allocations: 5069)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:55:51 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2503)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+Started GET "/movies" for 192.168.65.1 at 2024-06-29 17:55:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#index as HTML
+  [1m[36mTag Pluck (362.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 384.5ms | Allocations: 8716)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 389.8ms | Allocations: 11976)
+Completed 200 OK in 393ms (Views: 28.3ms | ActiveRecord: 362.5ms | Allocations: 12481)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:55:52 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2528)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mMovie Load (182.9ms)[0m  [1m[34mSELECT DISTINCT "movies".* FROM "movies" /* loading for inspect */ LIMIT $1 OFFSET $2[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/controllers/movies_controller.rb:32:in `index'
+検索結果: #<ActiveRecord::Relation [#<Movie id: 1, title: "ธี่หยด", description: "", release_date: "2023-10-25", poster_url: "https://image.tmdb.org/t/p/w500/wmenjROhs4AI4vDBmS...", tmdb_id: 1134433, created_at: "2024-06-28 15:35:20.713088000 +0000", updated_at: "2024-06-28 15:35:20.713088000 +0000", overview: nil, poster_path: nil>, #<Movie id: 2, title: "スプリット", description: "３人の女子高生ケイシー、クレア、マルシアは、クレアの誕生日パーティーの帰り道、見知らぬ男ケヴィンに拉...", release_date: "2017-01-19", poster_url: "https://image.tmdb.org/t/p/w500/shugVeOOvP4EhCNDc2...", tmdb_id: 381288, created_at: "2024-06-28 15:35:21.338213000 +0000", updated_at: "2024-06-28 15:35:21.338213000 +0000", overview: nil, poster_path: nil>, #<Movie id: 3, title: "エイリアン：コヴェナント", description: "滅びゆく地球から脱出し、人類移住計画を託された宇宙船コヴェナント号には、カップルで構成された乗組員が...", release_date: "2017-05-09", poster_url: "https://image.tmdb.org/t/p/w500/aPMiEvtUX1L9JS6ENE...", tmdb_id: 126889, created_at: "2024-06-28 15:35:22.251171000 +0000", updated_at: "2024-06-28 15:35:22.251171000 +0000", overview: nil, poster_path: nil>, #<Movie id: 4, title: "エイリアン", description: "巨大な宇宙貨物船に侵入した一匹の異星生物の恐怖。地球への帰途についていた宇宙貨物船ノストロモ号は、謎...", release_date: "1979-05-25", poster_url: "https://image.tmdb.org/t/p/w500/frDeP8xYmEaN41gFg0...", tmdb_id: 348, created_at: "2024-06-28 15:35:38.478813000 +0000", updated_at: "2024-06-28 15:35:38.478813000 +0000", overview: nil, poster_path: nil>, #<Movie id: 5, title: "セーヌ川の水面の下に", description: "", release_date: "2024-06-05", poster_url: "https://image.tmdb.org/t/p/w500/9l60PwALCwG92SsWCu...", tmdb_id: 1001311, created_at: "2024-06-28 15:35:38.794983000 +0000", updated_at: "2024-06-28 15:35:38.794983000 +0000", overview: nil, poster_path: nil>, #<Movie id: 6, title: "ザ・ウォッチャーズ", description: "地図にない森、ガラス貼りの部屋、見知らぬ3人ー28歳の孤独なアーティスト ミナは、贈り物を届けるだけ...", release_date: "2024-06-06", poster_url: "https://image.tmdb.org/t/p/w500/tVs1ySDmd9D7YzXO92...", tmdb_id: 1086747, created_at: "2024-06-28 15:37:05.828234000 +0000", updated_at: "2024-06-28 15:37:05.828234000 +0000", overview: nil, poster_path: nil>, #<Movie id: 7, title: "バード・ボックス", description: "人々が謎の闇によって次から次へと命を奪われ、社会が崩壊してから5年。ここまで生き延びてきた母親は2人...", release_date: "2018-12-13", poster_url: "https://image.tmdb.org/t/p/w500/svXzQXTCGoaCp2cd6d...", tmdb_id: 405774, created_at: "2024-06-28 15:37:12.959275000 +0000", updated_at: "2024-06-28 15:37:12.959275000 +0000", overview: nil, poster_path: nil>, #<Movie id: 8, title: "ゴジラ-1.0", description: "戦後、無になった日本へ追い打ちをかけるように現れたゴジラがこの国を 負 に叩き落す。史上最も絶望的な...", release_date: "2023-11-03", poster_url: "https://image.tmdb.org/t/p/w500/buvBq2zLP7CcJth8tj...", tmdb_id: 940721, created_at: "2024-06-28 15:37:16.638315000 +0000", updated_at: "2024-06-28 15:37:16.638315000 +0000", overview: nil, poster_path: nil>, #<Movie id: 9, title: "Sang Krasue 2", description: "", release_date: "2023-03-30", poster_url: "https://image.tmdb.org/t/p/w500/mkKEP3eK21xh3eq4O3...", tmdb_id: 949701, created_at: "2024-06-28 15:37:33.054866000 +0000", updated_at: "2024-06-28 15:37:33.054866000 +0000", overview: nil, poster_path: nil>, #<Movie id: 10, title: "オーメン：ザ・ファースト", description: "ローマのある教会で、新たな人生を歩み始めたアメリカ人女性、マーガレット。だが彼女は、悪の化身を生み出...", release_date: "2024-04-03", poster_url: "https://image.tmdb.org/t/p/w500/LOAmfM1IYVX37SdkI6...", tmdb_id: 437342, created_at: "2024-06-28 15:49:58.422595000 +0000", updated_at: "2024-06-28 15:49:58.422595000 +0000", overview: nil, poster_path: nil>, ...]>
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1462)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  [1m[36mTag Pluck (180.8ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 184.4ms | Allocations: 675)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 195.3ms | Allocations: 3240)
+Completed 200 OK in 852ms (Views: 17.2ms | ActiveRecord: 363.6ms | Allocations: 17333)
+
+
+  [1m[36mTag Pluck (3523.2ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 3527.6ms | Allocations: 9190)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3533.0ms | Allocations: 12449)
+Completed 200 OK in 3536ms (Views: -1626.9ms | ActiveRecord: 5161.0ms | Allocations: 12955)
+
+
+Started GET "/users/new" for 192.168.65.1 at 2024-06-29 17:55:57 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2770)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  [1m[36mTag Pluck (405.9ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 410.6ms | Allocations: 675)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 421.1ms | Allocations: 4180)
+Completed 200 OK in 425ms (Views: 16.5ms | ActiveRecord: 405.8ms | Allocations: 5081)
+
+
+Started POST "/users" for 192.168.65.1 at 2024-06-29 17:56:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"last_name"=>"らんてっく", "first_name"=>"太郎", "email"=>"kkparade52@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"登録"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1136)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:56:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2513)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (407.8ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 410.5ms | Allocations: 675)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 415.3ms | Allocations: 3917)
+Completed 200 OK in 417ms (Views: 8.4ms | ActiveRecord: 407.8ms | Allocations: 4426)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:57:58 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade52@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (203.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade52@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2131)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mTag Pluck (205.3ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 209.2ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 219.0ms | Allocations: 3523)
+Completed 422 Unprocessable Content in 1040ms (Views: 15.5ms | ActiveRecord: 611.1ms | Allocations: 5067)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:58:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade52@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (206.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade52@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 2130)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mTag Pluck (254.7ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 257.4ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 261.1ms | Allocations: 3522)
+Completed 422 Unprocessable Content in 677ms (Views: 7.7ms | ActiveRecord: 460.6ms | Allocations: 4997)
+
+
+Started GET "/movies" for 192.168.65.1 at 2024-06-29 17:58:10 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (204.1ms)[0m  [1m[34mSELECT DISTINCT "movies".* FROM "movies" /* loading for inspect */ LIMIT $1 OFFSET $2[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/controllers/movies_controller.rb:32:in `index'
+検索結果: #<ActiveRecord::Relation [#<Movie id: 1, title: "ธี่หยด", description: "", release_date: "2023-10-25", poster_url: "https://image.tmdb.org/t/p/w500/wmenjROhs4AI4vDBmS...", tmdb_id: 1134433, created_at: "2024-06-28 15:35:20.713088000 +0000", updated_at: "2024-06-28 15:35:20.713088000 +0000", overview: nil, poster_path: nil>, #<Movie id: 2, title: "スプリット", description: "３人の女子高生ケイシー、クレア、マルシアは、クレアの誕生日パーティーの帰り道、見知らぬ男ケヴィンに拉...", release_date: "2017-01-19", poster_url: "https://image.tmdb.org/t/p/w500/shugVeOOvP4EhCNDc2...", tmdb_id: 381288, created_at: "2024-06-28 15:35:21.338213000 +0000", updated_at: "2024-06-28 15:35:21.338213000 +0000", overview: nil, poster_path: nil>, #<Movie id: 3, title: "エイリアン：コヴェナント", description: "滅びゆく地球から脱出し、人類移住計画を託された宇宙船コヴェナント号には、カップルで構成された乗組員が...", release_date: "2017-05-09", poster_url: "https://image.tmdb.org/t/p/w500/aPMiEvtUX1L9JS6ENE...", tmdb_id: 126889, created_at: "2024-06-28 15:35:22.251171000 +0000", updated_at: "2024-06-28 15:35:22.251171000 +0000", overview: nil, poster_path: nil>, #<Movie id: 4, title: "エイリアン", description: "巨大な宇宙貨物船に侵入した一匹の異星生物の恐怖。地球への帰途についていた宇宙貨物船ノストロモ号は、謎...", release_date: "1979-05-25", poster_url: "https://image.tmdb.org/t/p/w500/frDeP8xYmEaN41gFg0...", tmdb_id: 348, created_at: "2024-06-28 15:35:38.478813000 +0000", updated_at: "2024-06-28 15:35:38.478813000 +0000", overview: nil, poster_path: nil>, #<Movie id: 5, title: "セーヌ川の水面の下に", description: "", release_date: "2024-06-05", poster_url: "https://image.tmdb.org/t/p/w500/9l60PwALCwG92SsWCu...", tmdb_id: 1001311, created_at: "2024-06-28 15:35:38.794983000 +0000", updated_at: "2024-06-28 15:35:38.794983000 +0000", overview: nil, poster_path: nil>, #<Movie id: 6, title: "ザ・ウォッチャーズ", description: "地図にない森、ガラス貼りの部屋、見知らぬ3人ー28歳の孤独なアーティスト ミナは、贈り物を届けるだけ...", release_date: "2024-06-06", poster_url: "https://image.tmdb.org/t/p/w500/tVs1ySDmd9D7YzXO92...", tmdb_id: 1086747, created_at: "2024-06-28 15:37:05.828234000 +0000", updated_at: "2024-06-28 15:37:05.828234000 +0000", overview: nil, poster_path: nil>, #<Movie id: 7, title: "バード・ボックス", description: "人々が謎の闇によって次から次へと命を奪われ、社会が崩壊してから5年。ここまで生き延びてきた母親は2人...", release_date: "2018-12-13", poster_url: "https://image.tmdb.org/t/p/w500/svXzQXTCGoaCp2cd6d...", tmdb_id: 405774, created_at: "2024-06-28 15:37:12.959275000 +0000", updated_at: "2024-06-28 15:37:12.959275000 +0000", overview: nil, poster_path: nil>, #<Movie id: 8, title: "ゴジラ-1.0", description: "戦後、無になった日本へ追い打ちをかけるように現れたゴジラがこの国を 負 に叩き落す。史上最も絶望的な...", release_date: "2023-11-03", poster_url: "https://image.tmdb.org/t/p/w500/buvBq2zLP7CcJth8tj...", tmdb_id: 940721, created_at: "2024-06-28 15:37:16.638315000 +0000", updated_at: "2024-06-28 15:37:16.638315000 +0000", overview: nil, poster_path: nil>, #<Movie id: 9, title: "Sang Krasue 2", description: "", release_date: "2023-03-30", poster_url: "https://image.tmdb.org/t/p/w500/mkKEP3eK21xh3eq4O3...", tmdb_id: 949701, created_at: "2024-06-28 15:37:33.054866000 +0000", updated_at: "2024-06-28 15:37:33.054866000 +0000", overview: nil, poster_path: nil>, #<Movie id: 10, title: "オーメン：ザ・ファースト", description: "ローマのある教会で、新たな人生を歩み始めたアメリカ人女性、マーガレット。だが彼女は、悪の化身を生み出...", release_date: "2024-04-03", poster_url: "https://image.tmdb.org/t/p/w500/LOAmfM1IYVX37SdkI6...", tmdb_id: 437342, created_at: "2024-06-28 15:49:58.422595000 +0000", updated_at: "2024-06-28 15:49:58.422595000 +0000", overview: nil, poster_path: nil>, ...]>
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 933)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (203.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 208.3ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 218.9ms | Allocations: 2695)
+Completed 200 OK in 1032ms (Views: 17.4ms | ActiveRecord: 407.5ms | Allocations: 6392)
+
+
+Started GET "/movies" for 192.168.65.1 at 2024-06-29 17:58:11 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (204.5ms)[0m  [1m[34mSELECT DISTINCT "movies".* FROM "movies" /* loading for inspect */ LIMIT $1 OFFSET $2[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/controllers/movies_controller.rb:32:in `index'
+検索結果: #<ActiveRecord::Relation [#<Movie id: 1, title: "ธี่หยด", description: "", release_date: "2023-10-25", poster_url: "https://image.tmdb.org/t/p/w500/wmenjROhs4AI4vDBmS...", tmdb_id: 1134433, created_at: "2024-06-28 15:35:20.713088000 +0000", updated_at: "2024-06-28 15:35:20.713088000 +0000", overview: nil, poster_path: nil>, #<Movie id: 2, title: "スプリット", description: "３人の女子高生ケイシー、クレア、マルシアは、クレアの誕生日パーティーの帰り道、見知らぬ男ケヴィンに拉...", release_date: "2017-01-19", poster_url: "https://image.tmdb.org/t/p/w500/shugVeOOvP4EhCNDc2...", tmdb_id: 381288, created_at: "2024-06-28 15:35:21.338213000 +0000", updated_at: "2024-06-28 15:35:21.338213000 +0000", overview: nil, poster_path: nil>, #<Movie id: 3, title: "エイリアン：コヴェナント", description: "滅びゆく地球から脱出し、人類移住計画を託された宇宙船コヴェナント号には、カップルで構成された乗組員が...", release_date: "2017-05-09", poster_url: "https://image.tmdb.org/t/p/w500/aPMiEvtUX1L9JS6ENE...", tmdb_id: 126889, created_at: "2024-06-28 15:35:22.251171000 +0000", updated_at: "2024-06-28 15:35:22.251171000 +0000", overview: nil, poster_path: nil>, #<Movie id: 4, title: "エイリアン", description: "巨大な宇宙貨物船に侵入した一匹の異星生物の恐怖。地球への帰途についていた宇宙貨物船ノストロモ号は、謎...", release_date: "1979-05-25", poster_url: "https://image.tmdb.org/t/p/w500/frDeP8xYmEaN41gFg0...", tmdb_id: 348, created_at: "2024-06-28 15:35:38.478813000 +0000", updated_at: "2024-06-28 15:35:38.478813000 +0000", overview: nil, poster_path: nil>, #<Movie id: 5, title: "セーヌ川の水面の下に", description: "", release_date: "2024-06-05", poster_url: "https://image.tmdb.org/t/p/w500/9l60PwALCwG92SsWCu...", tmdb_id: 1001311, created_at: "2024-06-28 15:35:38.794983000 +0000", updated_at: "2024-06-28 15:35:38.794983000 +0000", overview: nil, poster_path: nil>, #<Movie id: 6, title: "ザ・ウォッチャーズ", description: "地図にない森、ガラス貼りの部屋、見知らぬ3人ー28歳の孤独なアーティスト ミナは、贈り物を届けるだけ...", release_date: "2024-06-06", poster_url: "https://image.tmdb.org/t/p/w500/tVs1ySDmd9D7YzXO92...", tmdb_id: 1086747, created_at: "2024-06-28 15:37:05.828234000 +0000", updated_at: "2024-06-28 15:37:05.828234000 +0000", overview: nil, poster_path: nil>, #<Movie id: 7, title: "バード・ボックス", description: "人々が謎の闇によって次から次へと命を奪われ、社会が崩壊してから5年。ここまで生き延びてきた母親は2人...", release_date: "2018-12-13", poster_url: "https://image.tmdb.org/t/p/w500/svXzQXTCGoaCp2cd6d...", tmdb_id: 405774, created_at: "2024-06-28 15:37:12.959275000 +0000", updated_at: "2024-06-28 15:37:12.959275000 +0000", overview: nil, poster_path: nil>, #<Movie id: 8, title: "ゴジラ-1.0", description: "戦後、無になった日本へ追い打ちをかけるように現れたゴジラがこの国を 負 に叩き落す。史上最も絶望的な...", release_date: "2023-11-03", poster_url: "https://image.tmdb.org/t/p/w500/buvBq2zLP7CcJth8tj...", tmdb_id: 940721, created_at: "2024-06-28 15:37:16.638315000 +0000", updated_at: "2024-06-28 15:37:16.638315000 +0000", overview: nil, poster_path: nil>, #<Movie id: 9, title: "Sang Krasue 2", description: "", release_date: "2023-03-30", poster_url: "https://image.tmdb.org/t/p/w500/mkKEP3eK21xh3eq4O3...", tmdb_id: 949701, created_at: "2024-06-28 15:37:33.054866000 +0000", updated_at: "2024-06-28 15:37:33.054866000 +0000", overview: nil, poster_path: nil>, #<Movie id: 10, title: "オーメン：ザ・ファースト", description: "ローマのある教会で、新たな人生を歩み始めたアメリカ人女性、マーガレット。だが彼女は、悪の化身を生み出...", release_date: "2024-04-03", poster_url: "https://image.tmdb.org/t/p/w500/LOAmfM1IYVX37SdkI6...", tmdb_id: 437342, created_at: "2024-06-28 15:49:58.422595000 +0000", updated_at: "2024-06-28 15:49:58.422595000 +0000", overview: nil, poster_path: nil>, ...]>
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 929)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (203.2ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 207.0ms | Allocations: 673)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 216.8ms | Allocations: 2690)
+Completed 200 OK in 682ms (Views: 15.5ms | ActiveRecord: 407.5ms | Allocations: 6263)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:58:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade52@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (202.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade52@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2131)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 12)
+  [1m[36mTag Pluck (204.7ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 207.8ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 213.2ms | Allocations: 3523)
+Completed 422 Unprocessable Content in 626ms (Views: 10.0ms | ActiveRecord: 407.1ms | Allocations: 4990)
+
+
