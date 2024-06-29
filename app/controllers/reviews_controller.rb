@@ -70,7 +70,6 @@ class ReviewsController < ApplicationController
     flash[:danger] = "指定されたレビューが見つかりませんでした。"
     redirect_to movies_path
     end
-  end
 
   def review_params
     params.require(:review).permit(:title, :content, :rating, tag_ids: [])
