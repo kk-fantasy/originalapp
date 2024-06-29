@@ -10,6 +10,8 @@ class UserSessionsController < ApplicationController
     Rails.logger.debug("User: #{@user}")
 
     if @user
+      session[:user_id] = @user.id # セッションにユーザーIDを保存
+      Rails.logger.debug("セッションに保存されたユーザーID: #{session[:user_id]}")
       redirect_to root_path, success: 'ログインしました'
     else
       flash.now[:danger] = 'ログインに失敗しました'
@@ -19,6 +21,7 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
+    Rails.logger.debug("ログアウト後のセッション: #{session.to_hash}")
     redirect_to root_path, status: :see_other, success: 'ログアウトしました '
   end
 end

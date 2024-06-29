@@ -2,8 +2,6 @@
 
 Rails.application.config.session_store :cookie_store, 
                                        key: '_myapp_session', 
-                                       domain: :all, 
-                                       tld_length: 2, 
                                        secure: Rails.env.production?
 # セッションストアの種類:
 # - :cookie_store: セッションをクッキーに保存します（デフォルト）。
