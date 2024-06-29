@@ -1,7 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_movie, only: [:edit, :update, :destroy]
-  before_action :set_review, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authenticate_user!, only: [:show]
+  before_action :set_review, only: [:edit, :update, :destroy]
 
   def new
     @movie = Movie.find_by(tmdb_id: params[:movie_tmdb_id])
@@ -34,6 +33,10 @@ class ReviewsController < ApplicationController
   def show
     @review = Review.find(params[:id])
     @movie = Movie.find(@review.movie_id)
+    if !user_signed_in? && !@review.published?
+      flash[:danger] = "このレビューは非公開です。"
+      redirect_to movies_path
+    end
   end
 
   def edit

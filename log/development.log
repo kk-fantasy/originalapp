@@ -61,3 +61,801 @@ Migrating to AddDeviseToUsers (20240629081643)
   [1m[35m (323.1ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
   [1m[36mTRANSACTION (197.6ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (197.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+[dotenv] Set [36mDATABASE_URL[0m and [36mDATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (183.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (184.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (184.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20240629081643)
+  [1m[36mTRANSACTION (182.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (538.4ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (183.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (184.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (207.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (207.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (207.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20240629081643)
+  [1m[36mTRANSACTION (208.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (370.7ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (215.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (207.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (202.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (204.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (203.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20240629081643)
+  [1m[36mTRANSACTION (203.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (311.6ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (204.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (226.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (190.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (191.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (191.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddDeviseToUsers (20240629081643)
+  [1m[36mTRANSACTION (190.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (261.0ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[36mTRANSACTION (190.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (192.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (179.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (182.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (178.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (178.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (180.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (186.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (184.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (183.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (183.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (183.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (190.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (196.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (200.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (195.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (195.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (194.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:30:04 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (201.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (453.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (279.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (208.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 3430.7ms | Allocations: 31149)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.7ms | Allocations: 318)
+  Rendered shared/_flash_message.html.erb (Duration: 1.2ms | Allocations: 189)
+  [1m[36mTag Pluck (207.2ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 431.6ms | Allocations: 4051)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 3898.0ms | Allocations: 40224)
+Completed 200 OK in 7863ms (Views: 397.5ms | ActiveRecord: 5406.7ms | Allocations: 88267)
+
+
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:30:22 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (298.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (261.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (210.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (209.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 2307.5ms | Allocations: 20108)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 18)
+  [1m[36mTag Pluck (207.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 211.9ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 2555.9ms | Allocations: 24468)
+Completed 200 OK in 3329ms (Views: 742.9ms | ActiveRecord: 2114.7ms | Allocations: 29187)
+
+
+Started GET "/movies/1086747/reviews/1" for 192.168.65.1 at 2024-06-29 17:30:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ArgumentError (Before process_action callback :authenticate_user! has not been defined):
+  
+app/controllers/reviews_controller.rb:4:in `<class:ReviewsController>'
+app/controllers/reviews_controller.rb:1:in `<main>'
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:30:32 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (208.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (208.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (207.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (208.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 642.8ms | Allocations: 1970)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (208.6ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 212.8ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 865.0ms | Allocations: 3710)
+Completed 200 OK in 1293ms (Views: 35.1ms | ActiveRecord: 1041.2ms | Allocations: 4695)
+
+
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:34:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (206.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (206.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (293.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (294.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 1935.0ms | Allocations: 15014)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.6ms | Allocations: 287)
+  Rendered shared/_flash_message.html.erb (Duration: 0.4ms | Allocations: 162)
+  [1m[36mTag Pluck (207.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 211.5ms | Allocations: 927)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 2157.6ms | Allocations: 18271)
+Completed 200 OK in 3793ms (Views: 70.9ms | ActiveRecord: 3455.0ms | Allocations: 33004)
+
+
+Started GET "/movies/1086747/reviews/1" for 192.168.65.1 at 2024-06-29 17:34:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ArgumentError (Before process_action callback :authenticate_user! has not been defined):
+  
+app/controllers/reviews_controller.rb:4:in `<class:ReviewsController>'
+app/controllers/reviews_controller.rb:1:in `<main>'
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:34:48 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (206.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (209.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (206.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (263.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 691.9ms | Allocations: 1971)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (208.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 213.6ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 913.3ms | Allocations: 3729)
+Completed 200 OK in 1419ms (Views: 28.4ms | ActiveRecord: 1093.5ms | Allocations: 4776)
+
+
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:34:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (209.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (207.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (207.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (208.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 1804.5ms | Allocations: 15005)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.4ms | Allocations: 287)
+  Rendered shared/_flash_message.html.erb (Duration: 1.2ms | Allocations: 162)
+  [1m[36mTag Pluck (207.8ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 216.8ms | Allocations: 927)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 2042.0ms | Allocations: 18265)
+Completed 200 OK in 3587ms (Views: 86.0ms | ActiveRecord: 3252.3ms | Allocations: 33010)
+
+
+Started GET "/movies/1086747/reviews/1" for 192.168.65.1 at 2024-06-29 17:35:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ReviewsController#show as HTML
+  Parameters: {"movie_tmdb_id"=>"1086747", "id"=>"1"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 1076)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:35:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3828)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  [1m[36mTag Pluck (429.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 445.6ms | Allocations: 686)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 469.4ms | Allocations: 5249)
+Completed 200 OK in 473ms (Views: 41.5ms | ActiveRecord: 429.3ms | Allocations: 6107)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:35:12 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2534)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (415.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 420.4ms | Allocations: 675)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 434.8ms | Allocations: 3938)
+Completed 200 OK in 440ms (Views: 21.0ms | ActiveRecord: 415.5ms | Allocations: 4445)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:35:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (217.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 785ms (ActiveRecord: 217.2ms | Allocations: 1868)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:35:20 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (434.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (210.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (209.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (208.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (213.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1303.7ms | Allocations: 3875)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.4ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 24)
+  [1m[36mTag Pluck (208.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 213.8ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1526.6ms | Allocations: 5714)
+Completed 200 OK in 1530ms (Views: 45.0ms | ActiveRecord: 1483.5ms | Allocations: 6670)
+
+
+Started GET "/movies/1086747" for 192.168.65.1 at 2024-06-29 17:35:24 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#show as HTML
+  Parameters: {"tmdb_id"=>"1086747"}
+  [1m[36mMovie Load (206.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."tmdb_id" = $1 LIMIT $2[0m  [["tmdb_id", 1086747], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (208.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 6]]
+  ↳ app/views/movies/show.html.erb:31:in `each_with_index'
+  [1m[36mUser Load (207.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:35
+  [1m[36mTag Load (211.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "reviews_tags" ON "tags"."id" = "reviews_tags"."tag_id" WHERE "reviews_tags"."review_id" = $1[0m  [["review_id", 1]]
+  ↳ app/views/movies/show.html.erb:39
+  Rendered movies/show.html.erb within layouts/application (Duration: 646.1ms | Allocations: 1969)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.7ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (208.1ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 213.5ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 871.5ms | Allocations: 3746)
+Completed 200 OK in 1295ms (Views: 38.4ms | ActiveRecord: 1041.3ms | Allocations: 4714)
+
+
+Started GET "/movies/1086747/reviews/1" for 192.168.65.1 at 2024-06-29 17:35:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ReviewsController#show as HTML
+  Parameters: {"movie_tmdb_id"=>"1086747", "id"=>"1"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 842)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:35:28 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2496)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (488.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 492.7ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 496.7ms | Allocations: 3899)
+Completed 200 OK in 499ms (Views: 9.2ms | ActiveRecord: 488.5ms | Allocations: 4404)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:35:37 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2497)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (449.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 453.5ms | Allocations: 682)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 458.3ms | Allocations: 3908)
+Completed 200 OK in 462ms (Views: 9.7ms | ActiveRecord: 449.5ms | Allocations: 4413)
+
+
+Started GET "/movies" for 192.168.65.1 at 2024-06-29 17:35:38 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (238.3ms)[0m  [1m[34mSELECT DISTINCT "movies".* FROM "movies" /* loading for inspect */ LIMIT $1 OFFSET $2[0m  [["LIMIT", 11], ["OFFSET", 0]]
+  ↳ app/controllers/movies_controller.rb:32:in `index'
+検索結果: #<ActiveRecord::Relation [#<Movie id: 1, title: "ธี่หยด", description: "", release_date: "2023-10-25", poster_url: "https://image.tmdb.org/t/p/w500/wmenjROhs4AI4vDBmS...", tmdb_id: 1134433, created_at: "2024-06-28 15:35:20.713088000 +0000", updated_at: "2024-06-28 15:35:20.713088000 +0000", overview: nil, poster_path: nil>, #<Movie id: 2, title: "スプリット", description: "３人の女子高生ケイシー、クレア、マルシアは、クレアの誕生日パーティーの帰り道、見知らぬ男ケヴィンに拉...", release_date: "2017-01-19", poster_url: "https://image.tmdb.org/t/p/w500/shugVeOOvP4EhCNDc2...", tmdb_id: 381288, created_at: "2024-06-28 15:35:21.338213000 +0000", updated_at: "2024-06-28 15:35:21.338213000 +0000", overview: nil, poster_path: nil>, #<Movie id: 3, title: "エイリアン：コヴェナント", description: "滅びゆく地球から脱出し、人類移住計画を託された宇宙船コヴェナント号には、カップルで構成された乗組員が...", release_date: "2017-05-09", poster_url: "https://image.tmdb.org/t/p/w500/aPMiEvtUX1L9JS6ENE...", tmdb_id: 126889, created_at: "2024-06-28 15:35:22.251171000 +0000", updated_at: "2024-06-28 15:35:22.251171000 +0000", overview: nil, poster_path: nil>, #<Movie id: 4, title: "エイリアン", description: "巨大な宇宙貨物船に侵入した一匹の異星生物の恐怖。地球への帰途についていた宇宙貨物船ノストロモ号は、謎...", release_date: "1979-05-25", poster_url: "https://image.tmdb.org/t/p/w500/frDeP8xYmEaN41gFg0...", tmdb_id: 348, created_at: "2024-06-28 15:35:38.478813000 +0000", updated_at: "2024-06-28 15:35:38.478813000 +0000", overview: nil, poster_path: nil>, #<Movie id: 5, title: "セーヌ川の水面の下に", description: "", release_date: "2024-06-05", poster_url: "https://image.tmdb.org/t/p/w500/9l60PwALCwG92SsWCu...", tmdb_id: 1001311, created_at: "2024-06-28 15:35:38.794983000 +0000", updated_at: "2024-06-28 15:35:38.794983000 +0000", overview: nil, poster_path: nil>, #<Movie id: 6, title: "ザ・ウォッチャーズ", description: "地図にない森、ガラス貼りの部屋、見知らぬ3人ー28歳の孤独なアーティスト ミナは、贈り物を届けるだけ...", release_date: "2024-06-06", poster_url: "https://image.tmdb.org/t/p/w500/tVs1ySDmd9D7YzXO92...", tmdb_id: 1086747, created_at: "2024-06-28 15:37:05.828234000 +0000", updated_at: "2024-06-28 15:37:05.828234000 +0000", overview: nil, poster_path: nil>, #<Movie id: 7, title: "バード・ボックス", description: "人々が謎の闇によって次から次へと命を奪われ、社会が崩壊してから5年。ここまで生き延びてきた母親は2人...", release_date: "2018-12-13", poster_url: "https://image.tmdb.org/t/p/w500/svXzQXTCGoaCp2cd6d...", tmdb_id: 405774, created_at: "2024-06-28 15:37:12.959275000 +0000", updated_at: "2024-06-28 15:37:12.959275000 +0000", overview: nil, poster_path: nil>, #<Movie id: 8, title: "ゴジラ-1.0", description: "戦後、無になった日本へ追い打ちをかけるように現れたゴジラがこの国を 負 に叩き落す。史上最も絶望的な...", release_date: "2023-11-03", poster_url: "https://image.tmdb.org/t/p/w500/buvBq2zLP7CcJth8tj...", tmdb_id: 940721, created_at: "2024-06-28 15:37:16.638315000 +0000", updated_at: "2024-06-28 15:37:16.638315000 +0000", overview: nil, poster_path: nil>, #<Movie id: 9, title: "Sang Krasue 2", description: "", release_date: "2023-03-30", poster_url: "https://image.tmdb.org/t/p/w500/mkKEP3eK21xh3eq4O3...", tmdb_id: 949701, created_at: "2024-06-28 15:37:33.054866000 +0000", updated_at: "2024-06-28 15:37:33.054866000 +0000", overview: nil, poster_path: nil>, #<Movie id: 10, title: "オーメン：ザ・ファースト", description: "ローマのある教会で、新たな人生を歩み始めたアメリカ人女性、マーガレット。だが彼女は、悪の化身を生み出...", release_date: "2024-04-03", poster_url: "https://image.tmdb.org/t/p/w500/LOAmfM1IYVX37SdkI6...", tmdb_id: 437342, created_at: "2024-06-28 15:49:58.422595000 +0000", updated_at: "2024-06-28 15:49:58.422595000 +0000", overview: nil, poster_path: nil>, ...]>
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1437)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.7ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 17)
+  [1m[36mTag Pluck (209.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 213.6ms | Allocations: 673)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 227.5ms | Allocations: 3201)
+Completed 200 OK in 1205ms (Views: 20.4ms | ActiveRecord: 447.6ms | Allocations: 11847)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:35:43 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (267.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 621ms (ActiveRecord: 267.5ms | Allocations: 1424)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:35:44 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (414.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (207.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (210.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (206.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1277.5ms | Allocations: 2747)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 20)
+  [1m[36mTag Pluck (208.0ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 214.6ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1501.5ms | Allocations: 4521)
+Completed 200 OK in 1504ms (Views: 47.9ms | ActiveRecord: 1454.7ms | Allocations: 5062)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:35:59 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2518)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (415.5ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 419.1ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 425.5ms | Allocations: 3921)
+Completed 200 OK in 428ms (Views: 11.4ms | ActiveRecord: 415.4ms | Allocations: 4426)
+
+
+Started GET "/password_resets/new" for 192.168.65.1 at 2024-06-29 17:36:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PasswordResetsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering password_resets/new.html.erb within layouts/application
+  Rendered password_resets/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1723)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  [1m[36mTag Pluck (505.1ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 506.9ms | Allocations: 674)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 512.8ms | Allocations: 3132)
+Completed 200 OK in 517ms (Views: 9.2ms | ActiveRecord: 505.1ms | Allocations: 3991)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:36:25 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (207.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 557ms (ActiveRecord: 207.2ms | Allocations: 1442)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:36:26 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (420.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (207.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (208.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1278.4ms | Allocations: 2748)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mTag Pluck (213.6ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 218.2ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1505.8ms | Allocations: 4533)
+Completed 200 OK in 1509ms (Views: 42.5ms | ActiveRecord: 1465.0ms | Allocations: 5072)
+
+
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (204.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (204.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (206.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (205.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (203.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (182.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (183.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (180.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (181.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (180.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (185.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (182.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (178.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (178.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (179.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (177.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:40:06 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:40:07 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:40:09 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (193.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (390.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mReview Load (403.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mReview Load (415.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (196.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (202.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (209.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (194.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (201.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (206.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (193.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (201.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (206.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (195.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 2844.9ms | Allocations: 37188)
+  [1m[36mMovie Load (203.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 2855.5ms | Allocations: 37574)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.7ms | Allocations: 337)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.3ms | Allocations: 421)
+  Rendered shared/_flash_message.html.erb (Duration: 0.9ms | Allocations: 208)
+  Rendered shared/_flash_message.html.erb (Duration: 0.6ms | Allocations: 223)
+  [1m[36mMovie Load (208.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 2788.9ms | Allocations: 40441)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (195.0ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 621.1ms | Allocations: 5697)
+  [1m[36mTag Pluck (202.8ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 518)
+  Rendered shared/_search_form.html.erb (Duration: 627.8ms | Allocations: 6689)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3506.3ms | Allocations: 48776)
+  Rendered layout layouts/application.html.erb (Duration: 3496.4ms | Allocations: 46969)
+  [1m[36mTag Pluck (208.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+Completed 200 OK in 6802ms (Views: 778.5ms | ActiveRecord: 4294.1ms | Allocations: 99347)
+
+
+Completed 200 OK in 6802ms (Views: 855.5ms | ActiveRecord: 4277.9ms | Allocations: 99287)
+
+
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 632.8ms | Allocations: 6002)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3426.1ms | Allocations: 47936)
+Completed 200 OK in 6811ms (Views: 1130.5ms | ActiveRecord: 3971.8ms | Allocations: 100823)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:40:19 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3397)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  [1m[36mTag Pluck (430.3ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 434.7ms | Allocations: 684)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 445.3ms | Allocations: 4816)
+Completed 200 OK in 450ms (Views: 17.3ms | ActiveRecord: 430.3ms | Allocations: 5682)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:40:34 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (209.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 1436ms (ActiveRecord: 1055.0ms | Allocations: 12406)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:40:36 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (416.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (207.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (208.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (209.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (208.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1283.5ms | Allocations: 2751)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 23)
+  [1m[36mTag Pluck (208.4ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 213.8ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1506.1ms | Allocations: 4583)
+Completed 200 OK in 1508ms (Views: 49.9ms | ActiveRecord: 1457.2ms | Allocations: 5170)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:40:40 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2494)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 17)
+  [1m[36mTag Pluck (507.2ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 513.1ms | Allocations: 678)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 521.1ms | Allocations: 3901)
+Completed 200 OK in 525ms (Views: 15.3ms | ActiveRecord: 507.2ms | Allocations: 4406)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:40:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (257.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 608ms (ActiveRecord: 257.8ms | Allocations: 1429)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:40:56 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (414.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (208.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (207.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1267.2ms | Allocations: 2747)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  [1m[36mTag Pluck (207.0ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 209.7ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1481.1ms | Allocations: 4520)
+Completed 200 OK in 1483ms (Views: 29.2ms | ActiveRecord: 1452.8ms | Allocations: 5059)
+
+
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+  [1m[35m (204.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (206.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (205.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (206.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7983757829092739400)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (205.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /myapp/config/environment.rb:5)
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:43:30 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (178.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (377.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (188.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (187.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (187.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (187.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 2733.3ms | Allocations: 29135)
+  Rendered shared/_before_login_header.html.erb (Duration: 1.4ms | Allocations: 318)
+  Rendered shared/_flash_message.html.erb (Duration: 1.0ms | Allocations: 189)
+  [1m[36mTag Pluck (188.1ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 392.0ms | Allocations: 4051)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 3158.5ms | Allocations: 37177)
+Completed 200 OK in 6327ms (Views: 334.9ms | ActiveRecord: 4337.5ms | Allocations: 82521)
+
+
+Started GET "/login" for 192.168.65.1 at 2024-06-29 17:43:42 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3397)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.0ms | Allocations: 18)
+  [1m[36mTag Pluck (375.0ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 379.6ms | Allocations: 688)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 390.1ms | Allocations: 4821)
+Completed 200 OK in 395ms (Views: 17.2ms | ActiveRecord: 374.9ms | Allocations: 5687)
+
+
+Started POST "/login" for 192.168.65.1 at 2024-06-29 17:43:49 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UserSessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"kkparade62@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (188.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'kkparade62@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/user_sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 1101ms (ActiveRecord: 753.9ms | Allocations: 12298)
+
+
+Started GET "/" for 192.168.65.1 at 2024-06-29 17:43:50 +0900
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReview Load (374.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 5]]
+  ↳ app/views/home/index.html.erb:16:in `each_with_index'
+  [1m[36mMovie Load (187.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (187.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (187.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  [1m[36mMovie Load (205.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:18
+  Rendered home/index.html.erb within layouts/application (Duration: 1169.7ms | Allocations: 2751)
+  Rendered shared/_before_login_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered shared/_flash_message.html.erb (Duration: 0.2ms | Allocations: 23)
+  [1m[36mTag Pluck (187.2ms)[0m  [1m[34mSELECT "tags"."name", "tags"."id" FROM "tags"[0m
+  ↳ app/views/shared/_search_form.html.erb:6
+  Rendered shared/_search_form.html.erb (Duration: 191.0ms | Allocations: 672)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 1368.1ms | Allocations: 4571)
+Completed 200 OK in 1371ms (Views: 40.6ms | ActiveRecord: 1328.7ms | Allocations: 5159)
+
+
