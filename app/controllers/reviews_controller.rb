@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_movie, only: [:edit, :update, :destroy]
-  before_action :set_review, only: [:edit, :update, :destroy]
+  before_action :set_review, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:show]
 
   def new
@@ -64,12 +64,18 @@ class ReviewsController < ApplicationController
   end
 
   def set_review
-    @review = Review.find(params[:id])
-    @movie = Movie.find(@review.movie_id)
-  rescue ActiveRecord::RecordNotFound
-    flash[:danger] = "指定されたレビューが見つかりませんでした。"
-    redirect_to movies_path
+    @review = Review.find_by(id: params[:id])
+    if @review.nil?
+      flash[:danger] = "指定されたレビューが見つかりませんでした。"
+      redirect_to movies_path
+    else
+      @movie = Movie.find_by(id: @review.movie_id)
+      if @movie.nil?
+        flash[:danger] = "レビューの映画が見つかりませんでした。"
+        redirect_to movies_path
+      end
     end
+  end
 
   def review_params
     params.require(:review).permit(:title, :content, :rating, tag_ids: [])
