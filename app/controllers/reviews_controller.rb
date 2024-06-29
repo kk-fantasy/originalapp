@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_movie, only: [:edit, :update, :destroy]
-  before_action :set_review, only: [:edit, :update, :destroy]
+  before_action :set_review, only: [:show, :edit, :update, :destroy]
 
   def new
     @movie = Movie.find_by(tmdb_id: params[:movie_tmdb_id])
@@ -33,10 +33,6 @@ class ReviewsController < ApplicationController
   def show
     @review = Review.find(params[:id])
     @movie = Movie.find(@review.movie_id)
-    if !user_signed_in? && !@review.published?
-      flash[:danger] = "このレビューは非公開です。"
-      redirect_to movies_path
-    end
   end
 
   def edit
@@ -67,16 +63,11 @@ class ReviewsController < ApplicationController
   end
 
   def set_review
-    @review = Review.find_by(id: params[:id])
-    if @review.nil?
-      flash[:danger] = "指定されたレビューが見つかりませんでした。"
-      redirect_to movies_path
-    else
-      @movie = Movie.find_by(id: @review.movie_id)
-      if @movie.nil?
-        flash[:danger] = "レビューの映画が見つかりませんでした。"
-        redirect_to movies_path
-      end
+    @review = Review.find(params[:id])
+    @movie = Movie.find(@review.movie_id)
+  rescue ActiveRecord::RecordNotFound
+    flash[:danger] = "指定されたレビューが見つかりませんでした。"
+    redirect_to movies_path
     end
   end
 
