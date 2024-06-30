@@ -4,7 +4,8 @@
       <h1 class="text-center mb-4">レビューを編集する</h1>
 
       <%= form_with model: @review, url: movie_review_path(@movie, @review), method: :patch do |form| %>
-        <%= hidden_field_tag :movie_id, @movie.tmdb_id %>
+        <%= form.hidden_field :tmdb_id, value: @movie.tmdb_id %>
+        <%= form.hidden_field :movie_id, value: @movie.id %>
         <div class="form-group mb-3">
           <%= form.label :title, 'タイトル' %>
           <%= form.text_field :title, class: 'form-control' %>
@@ -19,19 +20,14 @@
         </div>
         <div class="form-group text-center">
         </div>
+        <div class="d-inline-block">
+          <%# 削除するボタン %>
+          <%= button_to "削除する", movie_review_path(movie_id: @movie.id, id: @review.id), method: :delete, data: { confirm: "本当に削除しますか？" }, class: "btn btn-danger mr-2" %>
+
+          <%# 更新するフォーム %>
+          <%= form.submit '更新する', class: 'btn btn-primary' %>
+        </div>
       <% end %>
-
-      <div class="d-inline-block">
-        <%# 削除するボタン %>
-        <%= button_to "削除する", movie_review_path(movie_id: @movie.id, id: @review.id), method: :delete, data: { confirm: "本当に削除しますか？" }, class: "btn btn-danger mr-2" %>
-
-        <%# 更新するフォーム %>
-        <%= form_for [@movie, @review], html: { class: 'd-inline' } do |f| %>
-          <%= f.hidden_field :tmdb_id, value: @movie.tmdb_id %>
-          <!-- 他の編集用フォームフィールドを追加 -->
-          <%= f.submit '更新する', class: 'btn btn-primary' %>
-        <% end %>
-      </div>
       
     </div>
   </div>

@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_movie, only: [:edit, :update, :destroy]
-  before_action :set_review, only: [:show, :edit, :update, :destroy]
+  before_action :set_review, only: [:edit, :update, :destroy]
 
   def new
     @movie = Movie.find_by(tmdb_id: params[:movie_tmdb_id])
@@ -56,11 +56,21 @@ class ReviewsController < ApplicationController
   private
 
   def set_movie
-    @movie = Movie.find_by(tmdb_id: params[:movie_tmdb_id])
+    if params[:review] && params[:review][:tmdb_id]
+      tmdb_id = params[:review][:tmdb_id]
+    elsif params[:movie_tmdb_id]
+      tmdb_id = params[:movie_tmdb_id]
+    else
+      tmdb_id = nil
+    end
+puts tmdb_id
+    @movie = Movie.find_by(tmdb_id: tmdb_id)
     if @movie.nil?
-      redirect_to movies_path, danger: '映画が見つかりませんでした。'
+      flash[:danger] = "映画が見つかりませんでした。"
+      redirect_to movies_path
     end
   end
+
 
   def set_review
     @review = Review.find(params[:id])
