@@ -16,7 +16,9 @@ class PasswordResetsController < ApplicationController
     end
   
     def edit
-      @user = User.load_from_reset_password_token(params[:token])
+      @token = params[:token]
+      @user = User.load_from_reset_password_token(@token)
+  
       if @user.blank?
         not_authenticated
         return
@@ -24,18 +26,20 @@ class PasswordResetsController < ApplicationController
     end
   
     def update
-      @user = User.load_from_reset_password_token(params[:token])
-    
+      @token = params[:token]
+      @user = User.load_from_reset_password_token(@token)
+  
       if @user.blank?
         not_authenticated
         return
       end
-    
-      if params[:user].present? && params[:user][:password].present? && params[:user][:password_confirmation].present?
+  
+      # パスワードと確認用パスワードの検証と更新処理
+      if params[:user][:password].present? && params[:user][:password_confirmation].present?
         @user.password = params[:user][:password]
         @user.password_confirmation = params[:user][:password_confirmation]
-    
-        if @user.change_password(params[:user][:password])
+  
+        if @user.save
           redirect_to login_path, success: 'パスワードを変更しました'
         else
           flash.now[:danger] = 'パスワードの変更に失敗しました。再度お試しください。'
@@ -45,7 +49,5 @@ class PasswordResetsController < ApplicationController
         flash.now[:danger] = 'パスワードと確認用パスワードを入力してください'
         render :edit
       end
-
-      logger.debug("Password reset attempt for user: #{@user}")
     end
   end

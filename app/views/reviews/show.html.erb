@@ -40,9 +40,9 @@
     <div class="col-md-4">
       <!-- ポスター画像をクリックして詳細画面に遷移 -->
       <div class="text-center mb-4">
-        <% if @movie['poster_path'].present? %>
+        <% if @movie.poster_url.present? %>
           <%= link_to movie_path(@movie.tmdb_id), class: "text-decoration-none" do %>
-            <%= image_tag "https://image.tmdb.org/t/p/w500#{@movie['poster_path']}", class: "img-fluid rounded" %>
+            <%= image_tag @movie.poster_url, class: "img-fluid rounded" %>
           <% end %>
         <% else %>
           <%= image_tag "placeholder.png", class: "img-fluid rounded", alt: "No Image" %>

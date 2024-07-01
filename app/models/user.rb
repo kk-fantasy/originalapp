@@ -27,7 +27,13 @@ class User < ApplicationRecord
 
   def change_password(new_password)
     self.password = new_password
-    save!
+    if save
+      logger.debug "Password successfully updated for user: #{self.email}"
+      true
+    else
+      logger.debug "Failed to update password for user: #{self.email} - Errors: #{self.errors.full_messages}"
+      false
+    end
   end
 
   private

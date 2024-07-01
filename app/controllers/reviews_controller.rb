@@ -33,6 +33,7 @@ class ReviewsController < ApplicationController
   def show
     @review = Review.find(params[:id])
     @movie = Movie.find(@review.movie_id)
+    logger.debug("@movie: #{@movie.inspect}")
   end
 
   def edit
