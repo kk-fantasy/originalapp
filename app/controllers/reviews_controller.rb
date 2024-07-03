@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  skip_before_action :require_login, only: [:show]
   before_action :set_movie, only: [:edit, :update, :destroy]
   before_action :set_review, only: [:edit, :update, :destroy]
 
