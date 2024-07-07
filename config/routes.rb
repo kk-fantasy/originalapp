@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   resources :movies, param: :tmdb_id, only: [:index, :show] do
     resources :reviews, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
       resources :comments, only: [:new, :create], param: :review_id
+
+      resource :like, only: [:create, :destroy]
     end
   end
 

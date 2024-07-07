@@ -36,6 +36,23 @@
           </div>
         <% end %>
       </div>
+      <!-- 水平線 -->
+      <hr>
+
+      <!-- いいね機能（部分テンプレートを使用） -->
+      <h5>いいね</h5>
+
+      <div class='ms-auto'>
+  <% if current_user.likes?(@review) %>
+    <%= render 'likes/unlike', { review: @review } %>
+  <% else %>
+    <%= render 'likes/like', { review: @review } %>
+  <% end %>
+
+  <!-- いいねの数を表示 -->
+  <span>&nbsp;<%= @review.likes_count %>件のいいね</span>
+</div>
+
     </div>
     <div class="col-md-4">
       <!-- ポスター画像をクリックして詳細画面に遷移 -->

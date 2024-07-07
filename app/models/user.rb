@@ -7,6 +7,8 @@ class User < ApplicationRecord
   authenticates_with_sorcery!
 
   has_many :reviews
+  has_many :likes, dependent: :destroy
+  has_many :liked_reviews, through: :likes, source: :review
 
   validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
@@ -34,6 +36,10 @@ class User < ApplicationRecord
       logger.debug "Failed to update password for user: #{self.email} - Errors: #{self.errors.full_messages}"
       false
     end
+  end
+
+  def likes?(review)
+    self.likes.exists?(review_id: review.id)
   end
 
   private
