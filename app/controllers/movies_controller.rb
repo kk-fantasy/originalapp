@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
   def index
     # TMDbからホラー映画を取得
     tmdb_client = TmdbClient.new
-    response = tmdb_client.fetch_horror_movies
+    response = tmdb_client.fetch_horror_movies(1)  # 引数を追加
   
     if response.code == 200
       @tmdb_movies = response.parsed_response['results'].sample(15)
