@@ -1,21 +1,18 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  # devise :database_authenticatable, :registerable,
-  #        :recoverable, :rememberable, :validatable
-
   authenticates_with_sorcery!
 
   has_many :reviews
   has_many :likes, dependent: :destroy
   has_many :liked_reviews, through: :likes, source: :review
+  has_many :authentications, dependent: :destroy
+
+  accepts_nested_attributes_for :authentications
 
   validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :last_name, presence: true, length: { maximum: 255 }
-
   validates :reset_password_token, uniqueness: true, allow_nil: true, if: -> { reset_password_token.present? }
 
   def name
@@ -40,6 +37,21 @@ class User < ApplicationRecord
 
   def likes?(review)
     self.likes.exists?(review_id: review.id)
+  end
+
+  def self.from_omniauth(auth)
+    authentication = Authentication.find_by(provider: auth['provider'], uid: auth['uid'])
+    if authentication
+      return authentication.user
+    else
+      user = User.find_or_create_by(email: auth['info']['email']) do |u|
+        u.first_name = auth['info']['first_name'] || auth['info']['name'].split.first
+        u.last_name = auth['info']['last_name'] || auth['info']['name'].split.last
+        u.password = SecureRandom.hex(10)
+      end
+      user.authentications.create(provider: auth['provider'], uid: auth['uid'])
+      return user
+    end
   end
 
   private

@@ -29,6 +29,7 @@
       <div class='text-center'>
         <%= link_to '登録ページへ', new_user_path %>
         <%= link_to 'パスワードをお忘れの方はこちら', new_password_reset_path %>
+        <%= link_to "Sign in with Google", auth_at_provider_path(:google) %>
       </div>
     </div>
   </div>

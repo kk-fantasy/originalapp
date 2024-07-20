@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_06_063352) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_19_151504) do
   create_schema "_heroku"
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
+
+  create_table "authentications", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "provider"
+    t.string "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_authentications_on_user_id"
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -82,10 +91,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_06_063352) do
     t.datetime "updated_at", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_token_expires_at"
+    t.string "provider"
+    t.string "uid"
+    t.string "name"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "authentications", "users"
   add_foreign_key "comments", "movies"
   add_foreign_key "comments", "reviews"
   add_foreign_key "comments", "users"

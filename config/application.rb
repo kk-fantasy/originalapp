@@ -25,5 +25,9 @@ module Myapp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Set default URL options for development
+    config.action_controller.default_url_options = { host: 'localhost', port: 3000 }
+    config.action_controller.allow_forgery_protection = true if Rails.env.production?
   end
 end

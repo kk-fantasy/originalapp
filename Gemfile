@@ -96,3 +96,7 @@ end
 
 gem 'sassc-rails'
 
+gem 'omniauth-google-oauth2'
+
+gem 'omniauth'
+
