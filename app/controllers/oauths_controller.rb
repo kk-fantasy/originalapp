@@ -17,7 +17,7 @@ class OauthsController < ApplicationController
         user = User.from_omniauth(request.env["omniauth.auth"])
         if user.persisted?
           auto_login(user)
-          redirect_to root_path, notice: "Google認証に成功しました"
+          redirect_to root_path, success: "Google認証に成功しました"
         else
           session["devise.google_data"] = request.env["omniauth.auth"]
           redirect_to new_user_registration_url, alert: "Google認証に失敗しました"
