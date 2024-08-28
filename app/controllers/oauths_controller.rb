@@ -12,18 +12,21 @@ class OauthsController < ApplicationController
     end
   
     def callback
-      provider = params[:provider]
-      if provider == 'google' || provider == 'google_oauth2'
-        user = User.from_omniauth(request.env["omniauth.auth"])
-        if user.persisted?
-          auto_login(user)
-          redirect_to root_path, success: "Google認証に成功しました"
+        provider = params[:provider]
+        
+        if provider == 'google_oauth2'
+          user = User.from_omniauth(request.env["omniauth.auth"])
+          
+          if user.persisted?
+            auto_login(user)
+            redirect_to root_path, success: "Google認証に成功しました"
+          else
+            # 必要なら、セッションにデータを保存する
+            session["user_data"] = request.env["omniauth.auth"]
+            redirect_to new_user_registration_url, alert: "Google認証に失敗しました"
+          end
         else
-          session["devise.google_data"] = request.env["omniauth.auth"]
-          redirect_to new_user_registration_url, alert: "Google認証に失敗しました"
+          render plain: "Provider #{provider} is not supported"
         end
-      else
-        render plain: "Provider #{provider} is not supported"
       end
-    end
   end

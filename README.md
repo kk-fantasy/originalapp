@@ -44,7 +44,7 @@ Ruby 3.2.2 Rails 7.1.3.2
 フロントエンド Hotwire
 CSSフレームワーク bootstrap5系、Silicon（Bootstrapテンプレート）
 WebAPI Amazon Personalize,TMDBAPI(映画の情報取得)
-インフラ render.com
+インフラ Heroku
 
 
 ■ 画面遷移図
