@@ -3,7 +3,12 @@
     <div class="col-md-8 col-lg-6 mx-auto">
       <h1 class="text-center mb-4">パスワードリセット</h1>
       
-      <%= form_with url: password_reset_path(params[:token]), method: :patch, local: true do |form| %>
+      <form action="<%= password_reset_path(params[:token]) %>" method="post">
+        <!-- Authenticity Token -->
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <!-- Patch Method Spoofing -->
+        <input type="hidden" name="_method" value="patch">
+
         <% if @user&.errors&.any? %>
           <div id="error_explanation" class="alert alert-danger">
             <h2><%= pluralize(@user.errors.count, "エラー") %>が発生しました：</h2>
@@ -16,17 +21,17 @@
         <% end %>
         
         <div class="form-group">
-          <%= form.label :password, '新しいパスワード' %>
-          <%= form.password_field :password, class: 'form-control' %>
+          <label for="user_password">新しいパスワード</label>
+          <input type="password" name="user[password]" id="user_password" class="form-control" required>
         </div>
         <div class="form-group">
-          <%= form.label :password_confirmation, '新しいパスワードの確認' %>
-          <%= form.password_field :password_confirmation, class: 'form-control' %>
+          <label for="user_password_confirmation">新しいパスワードの確認</label>
+          <input type="password" name="user[password_confirmation]" id="user_password_confirmation" class="form-control" required>
         </div>
         <div class="form-group text-center">
-          <%= form.submit '更新', class: 'btn btn-primary' %>
+          <input type="submit" value="更新" class="btn btn-primary">
         </div>
-      <% end %>
+      </form>
     </div>
   </div>
 </div>

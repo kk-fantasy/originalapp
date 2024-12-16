@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
+
+  # OAuth認証
+  get "oauth/callback", to: "oauths#callback"
+  get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
+  get '/auth/:provider/callback', to: 'oauths#callback'
   
   # マイページ
   get '/my_page', to: 'users#show', as: 'my_page'
@@ -18,6 +23,8 @@ Rails.application.routes.draw do
   resources :movies, param: :tmdb_id, only: [:index, :show] do
     resources :reviews, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
       resources :comments, only: [:new, :create], param: :review_id
+
+      resource :like, only: [:create, :destroy]
     end
   end
 

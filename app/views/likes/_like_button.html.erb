@@ -1,0 +1,7 @@
+<div class='ms-auto'>
+  <% if current_user.likes?(review) %>
+    <%= render 'likes/unlike', { review: review } %>
+  <% else %>
+    <%= render 'likes/like', { review: review } %>
+  <% end %>
+</div>

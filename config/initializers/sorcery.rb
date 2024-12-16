@@ -4,10 +4,17 @@
 # Available submodules are: :user_activation, :http_basic_auth, :remember_me,
 # :reset_password, :session_timeout, :brute_force_protection, :activity_logging,
 # :magic_login, :external
-Rails.application.config.sorcery.submodules = [:reset_password]
+Rails.application.config.sorcery.submodules = [:reset_password, :external]
 
 # Here you can configure each submodule's features.
 Rails.application.config.sorcery.configure do |config|
+
+  config.external_providers = [:google]
+
+  config.google.key = ENV['GOOGLE_CLIENT_ID']
+  config.google.secret = ENV['GOOGLE_CLIENT_SECRET']
+  config.google.callback_url = ENV['GOOGLE_CALLBACK_URL']
+  config.google.user_info_mapping = { email: "email", name: "name" }
   # -- core --
   # What controller action to call for non-authenticated users. You can also
   # override the 'not_authenticated' method of course.
@@ -243,6 +250,9 @@ Rails.application.config.sorcery.configure do |config|
   # config.battlenet.scope = "openid"
   # --- user config ---
   config.user_config do |user|
+    user.authentications_class = Authentication
+    user.username_attribute_names = [:email]
+    user.downcase_username_before_authenticating = true
     user.reset_password_mailer = UserMailer # パスワードリセット用のメーラークラスを設定する
     user.reset_password_token_attribute_name = :reset_password_token # リセットパスワードトークンの属性名を設定する（任意）
     user.reset_password_email_method_name = :reset_password_email # パスワードリセットメールのメソッド名を設定する（任意）
@@ -568,4 +578,5 @@ Rails.application.config.sorcery.configure do |config|
   # This line must come after the 'user config' block.
   # Define which model authenticates with sorcery.
   config.user_class = "User"
+  config.not_authenticated_action = :not_authenticated
 end
